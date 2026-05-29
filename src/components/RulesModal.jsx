@@ -37,7 +37,7 @@ export default function RulesModal({ isOpen, onClose }) {
     {
       id: 'postanowienia-ogolne',
       title: '1. Postanowienia ogólne',
-      content: 'Wystawka IT służy do wyprzedaży i utylizacji sprzętu poleasingowego i wycofanego z użytku w firmie. Sprzęt dostępny na wystawce jest używany, może posiadać ślady użytkowania, a jego stan techniczny jest opisany w szczegółach każdego przedmiotu. Kupujesz na własne ryzyko – sprzęt nie jest objęty standardową gwarancją.'
+      content: 'RESERVER IT Hardware służy do wyprzedaży i utylizacji sprzętu poleasingowego i wycofanego z użytku w firmie. Sprzęt dostępny na wystawce jest używany, może posiadać ślady użytkowania, a jego stan techniczny jest opisany w szczegółach każdego przedmiotu. Kupujesz na własne ryzyko – sprzęt nie jest objęty standardową gwarancją.'
     },
     {
       id: 'zasady-rezerwacji',
