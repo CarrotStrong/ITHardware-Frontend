@@ -23,14 +23,3 @@ W projekcie użyto ikon z biblioteki **Lucide**:
 - Części ikon pochodzą z **Feather Icons** – licencja MIT  
 
 Ikony można używać, kopiować, modyfikować i rozpowszechniać w dowolnym celu, także komercyjnym, pod warunkiem zachowania informacji o licencji i autorach. Wszystkie ikony są dostarczone „AS IS”, bez gwarancji.
-
-#  Wystawka IT - System Zarządzania Zasobami
-Aplikacja do zarządzania sprzętem IT, rezerwacjami oraz procesem wycofywania zasobów (scrapping).
-
-##  Instalacja
-Po sklonowaniu repozytorium należy przygotować obie części aplikacji.
-
-### Konfiguracja Backend
-1. Wejdź do folderu: `cd backend`
-2. Zainstaluj biblioteki: `npm install`
-3. Utwórz plik `.env` i uzupełnij dane bazy danych
