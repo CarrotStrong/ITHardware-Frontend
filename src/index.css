@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'FSMillbank';
+  src: url('./assets/fonts/FSMillbank-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  ascent-override: 105%;
+}
+
+@font-face {
+  font-family: 'FSMillbank';
+  src: url('./assets/fonts/FSMillbank-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  ascent-override: 105%;
+}
+
+@theme {
+  --font-sans: 'FSMillbank', 'Inter', system-ui, sans-serif;
+
+  --color-appBg: var(--theme-bg);
+  --color-appText: var(--theme-text);
+  --color-appPrimary: var(--theme-primary);
+  --color-appSecondary: var(--theme-secondary);
+  --color-appBorder: var(--theme-border);
+  --color-appCard: var(--theme-card);
+  --color-appMuted: var(--theme-muted);
+  --color-appInputBg: var(--theme-input-bg);
+  --color-appModalBg: var(--theme-modal-bg);
+  --color-appFocusRing: var(--theme-focus-ring);
+  --color-navPrimary: var(--theme-nav-bg);
+
+  --color-appCardElevated: var(--theme-card-elevated); 
+  --color-appBorderStrong: var(--theme-border-strong);
+
+  --color-appInfoBg: var(--theme-info-bg);
+  --color-appInfoBorder: var(--theme-info-border);
+  --color-appInfoText: var(--theme-info-text);
+  --color-appInfoIconBg: var(--theme-info-icon-bg);
+  --color-appInfoIconText: var(--theme-info-icon-text);
+  --color-appInfoHighlight: var(--theme-info-highlight);
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --theme-bg: #f8fafc;
+    --theme-text: #1f2937;
+    --theme-primary: #004aad;
+    --theme-secondary: #003985;
+    --theme-border: rgba(0, 0, 0, 0.03);
+    --theme-card: rgba(255, 255, 255, 1);
+    --theme-muted: #6b7280;
+    --theme-input-bg: rgba(243, 243, 243, 0.5);
+    --theme-modal-bg: rgba(255, 255, 255, 1);
+    --theme-focus-ring: rgba(0, 150, 90, 0.2);
+    --theme-nav-bg: #004aad;
+
+    --theme-info-bg: #eff6ff;
+    --theme-info-border: #bfdbfe;
+    --theme-info-text: #1d4ed8;
+    --theme-info-icon-bg: #dbeafe;
+    --theme-info-icon-text: #2563eb;
+    --theme-info-highlight: rgba(219, 234, 254, 0.7);
+    --theme-info-gradient: linear-gradient(to bottom, #38bdf8 0%, #38bdf8 6px, #ffffff 6px, #f0f8ff 100%);
+
+    --theme-card-elevated: rgba(255, 255, 255, 1);
+    --theme-border-strong: rgba(0, 0, 0, 0.08);
+    --theme-chart-green: #00965A;
+    --theme-chart-blue: #1d4ed8;
+    --theme-chart-amber: #d97e06;
+    --theme-chart-red: #dc2626;
+    --theme-chart-purple: #6b21a8;
+  }
+
+  [data-theme='dark'] {
+    color-scheme: dark;
+    --theme-bg: #202124; 
+    --theme-text: #f1f5f9;
+    --theme-primary: #005bd1; 
+    --theme-secondary: #004caf;
+    --theme-border: rgba(255, 255, 255, 0.01);
+    --theme-card: rgba(41, 42, 45, 1);
+    --theme-muted: #AAAAAA;
+    --theme-input-bg: rgba(0, 0, 0, 0.15);
+    --theme-modal-bg: rgba(40, 41, 44, 1);
+    --theme-focus-ring: rgba(0, 150, 90, 0.3);
+    --theme-nav-bg: rgba(41, 42, 45, 1);
+
+    --theme-info-bg: rgba(30, 58, 138, 0.15); 
+    --theme-info-border: rgba(30, 64, 175, 0.3);
+    --theme-info-text: #60a5fa;
+    --theme-info-icon-bg: rgba(30, 58, 138, 0.3);
+    --theme-info-icon-text: #93c5fd;
+    --theme-info-highlight: rgba(30, 64, 175, 0.4);
+    --theme-info-gradient: linear-gradient(to bottom, #3b82f6 0%, #3b82f6 6px, rgba(30, 58, 138, 0.2) 6px, rgba(30, 58, 138, 0.05) 100%);
+
+    --theme-card-elevated: rgba(54, 55, 58, 1);
+    --theme-border-strong: rgba(255, 255, 255, 0.08);
+    --theme-chart-green: #179c67;
+    --theme-chart-blue: #2c5ada;
+    --theme-chart-amber: #d88a25;
+    --theme-chart-red: #d43c3c;
+    --theme-chart-purple: #9037d8;
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--theme-text);
+  background-color: var(--theme-bg);
+  scrollbar-gutter: stable;
+}
+
+@layer base {
+  img {
+    -webkit-user-drag: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::selection {
+  background: var(--theme-primary);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--theme-primary);
+  color: white;
+}
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
